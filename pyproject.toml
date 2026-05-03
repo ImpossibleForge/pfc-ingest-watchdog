@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68,<77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name            = "pfc-ingest-watchdog"
+version         = "0.1.0"
+description     = "Automatic file watcher — monitors folders/S3 and converts new files to PFC format"
+readme          = "README.md"
+license         = { text = "MIT" }
+requires-python = ">=3.8"
+keywords        = ["pfc", "compression", "logs", "watchdog", "automation", "s3"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Logging",
+    "Topic :: Utilities",
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+s3    = ["boto3>=1.26"]
+toml  = ["tomli>=2.0"]
+all   = ["boto3>=1.26", "tomli>=2.0"]
+
+[project.scripts]
+pfc-ingest-watchdog = "pfc_ingest_watchdog:main"
+
+[project.urls]
+Homepage   = "https://github.com/ImpossibleForge/pfc-ingest-watchdog"
+Repository = "https://github.com/ImpossibleForge/pfc-ingest-watchdog"
+
+[tool.setuptools]
+py-modules = ["pfc_ingest_watchdog"]

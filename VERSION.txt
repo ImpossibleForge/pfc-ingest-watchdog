@@ -1,0 +1,15 @@
+pfc-ingest-watchdog v0.1.0
+==========================
+Status:  RELEASE — 2026-05-04
+Datum:   2026-04-29
+
+Features v0.1.0:
+  - Local folder watching (polling, configurable interval)
+  - S3 prefix watching (polling + state tracking)
+  - Tool-agnostisch: converter = "pfc-convert" | "pfc-migrate"
+  - Python API: Watchdog class
+  - TOML config file
+  - State file (JSON, verhindert Doppelverarbeitung)
+  - Audit log (JSONL, ein Eintrag pro konvertierter Datei)
+  - --once mode (einmaliger Scan)
+  - --dry-run mode
