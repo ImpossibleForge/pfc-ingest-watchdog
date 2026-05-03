@@ -35,6 +35,20 @@ pip install pfc-ingest-watchdog
 
 Requires either [pfc-convert](https://github.com/ImpossibleForge/pfc-convert) or [pfc-migrate](https://github.com/ImpossibleForge/pfc-migrate) depending on your use case.
 
+Both converters require the `pfc_jsonl` binary on the machine running the watchdog:
+
+```bash
+# Linux x64:
+curl -L https://github.com/ImpossibleForge/pfc-jsonl/releases/latest/download/pfc_jsonl-linux-x64 \
+     -o /usr/local/bin/pfc_jsonl && chmod +x /usr/local/bin/pfc_jsonl
+
+# macOS (Apple Silicon M1–M4):
+curl -L https://github.com/ImpossibleForge/pfc-jsonl/releases/latest/download/pfc_jsonl-macos-arm64 \
+     -o /usr/local/bin/pfc_jsonl && chmod +x /usr/local/bin/pfc_jsonl
+```
+
+> **License note:** `pfc_jsonl` is free for personal and open-source use. Commercial use requires a written license — see [pfc-jsonl](https://github.com/ImpossibleForge/pfc-jsonl).
+
 ---
 
 ## Quick Start
