@@ -12,3 +12,4 @@ audit.jsonl
 # PFC buffer files
 .pfc_buffer.jsonl
 .pfc_buffer.compressing
+venv/
