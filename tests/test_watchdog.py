@@ -49,7 +49,7 @@ PFC_CONVERT_DIR = _find_tool_dir("pfc-convert/pfc_convert.py")
 PFC_MIGRATE_DIR = _find_tool_dir("pfc-migrate/pfc_migrate.py")
 
 
-def test(name, fn):
+def _run_test(name, fn):
     t0 = time.time()
     try:
         fn()
@@ -662,7 +662,7 @@ if __name__ == "__main__":
     ]
 
     for name, fn in all_tests:
-        test(name, fn)
+        _run_test(name, fn)
 
     total  = len(results)
     passed = sum(1 for _, ok, _ in results if ok)

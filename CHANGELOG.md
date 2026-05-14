@@ -1,5 +1,14 @@
 # Changelog — pfc-ingest-watchdog
 
+## v0.1.1 (2026-05-14)
+
+### Enhanced — Test helper renamed for pytest compatibility
+
+Renamed internal helper  to  in both
+test files. The previous name caused pytest to pick it up as a test case and report
+a spurious "fixture 'name' not found" error — all 37 actual tests still passed, but
+the noise was misleading. No functional changes.
+
 ## v0.1.0 — 2026-04-29
 
 Initial release.

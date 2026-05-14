@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name            = "pfc-ingest-watchdog"
-version         = "0.1.0"
+version         = "0.1.1"
 description     = "Automatic file watcher — monitors folders/S3 and converts new files to PFC format"
 readme          = "README.md"
 license         = { text = "MIT" }

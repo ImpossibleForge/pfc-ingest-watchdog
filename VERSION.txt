@@ -1,6 +1,6 @@
-pfc-ingest-watchdog v0.1.0
+pfc-ingest-watchdog v0.1.1
 ==========================
-Status:  RELEASE — 2026-05-04
+Status:  RELEASE — 2026-05-14
 Datum:   2026-04-29
 
 Features v0.1.0:
