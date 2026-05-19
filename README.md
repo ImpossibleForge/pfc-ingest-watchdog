@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![PFC-JSONL](https://img.shields.io/badge/PFC--JSONL-v3.4-green.svg)](https://github.com/ImpossibleForge/pfc-jsonl)
+[![PFC-JSONL](https://img.shields.io/badge/PFC--JSONL-green.svg)](https://github.com/ImpossibleForge/pfc-jsonl)
 [![Version](https://img.shields.io/badge/pfc--ingest--watchdog-v0.1.1-brightgreen.svg)](https://github.com/ImpossibleForge/pfc-ingest-watchdog/releases)
 
 Automatic file watcher for the [PFC Ecosystem](https://github.com/ImpossibleForge/pfc-jsonl). Monitors local folders or S3 prefixes for new files and converts them to `.pfc` automatically — no manual invocation needed.
